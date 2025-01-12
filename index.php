@@ -498,8 +498,8 @@
           </svg>
         </button>
         <div id="media-menu" class="dropdown-menu bg-white rounded-md mt-2 hidden">
-          <a href="pages/about_us.php" class="block px-4 py-2 hover:bg-gray-200">Publication</a>
-          <a href="pages/department.php" class="block px-4 py-2 hover:bg-gray-200">Galerry</a>
+          <a href="pages/media.php" class="block px-4 py-2 hover:bg-gray-200">Publication</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Galerry</a>
         </div>
       </div>
 
