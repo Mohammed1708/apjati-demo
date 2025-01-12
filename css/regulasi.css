@@ -1,0 +1,167 @@
+@media (max-width: 767px) {
+  .theme-table-type .theme-table__row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .theme-table-type--secondary .theme-table__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .theme-table-type--accordion .theme-table__row {
+    position: relative;
+    display: block;
+  }
+  .theme-table-type--accordion .theme-table__row:before {
+    content: "\f0d7";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -8px;
+    font: 16px fontawesome;
+    color: #007CC2;
+    transition: all 0.3s ease;
+  }
+  .theme-table-type--accordion .theme-table__row::after {
+    display: none;
+  }
+  .theme-table-type--accordion .theme-table__row[aria-expanded=true] {
+    background-color: #F6FBFF;
+  }
+  .theme-table-type--accordion .theme-table__row[aria-expanded=true]::before {
+    transform: rotate(-180deg);
+  }
+  .theme-table-type--accordion .theme-table__collapse-content-row {
+    position: relative;
+    visibility: visible;
+  }
+  .theme-table-type--accordion .theme-table__collapse-content-row::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    width: auto;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  .theme-table-type--accordion .theme-table__collapse-content {
+    padding: 0px 20px 20px;
+    background-color: #F6FBFF;
+  }
+}
+@media (min-width: 768px) {
+  .theme-table-type--accordion .theme-table__collapse-content-row {
+    display: none;
+    visibility: hidden;
+  }
+}
+.regulation .theme-table__row {
+  cursor: pointer;
+}
+.regulation .theme-table__collapse-content-row {
+  cursor: pointer;
+}
+.regulation .regulation-table .regulation-title {
+  width: 48%;
+}
+.regulation .regulation-table__collapse-content {
+  font-size: 15px;
+}
+.regulation .regulation-table__collapse-content span {
+  display: block;
+}
+@media (max-width: 767px) {
+  .regulation__filter-text-wrapper {
+    display: none;
+  }
+  .regulation__search-wrapper {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=regulation.css.map*/
+
+@media (max-width: 767px) {
+  .theme-table-type .theme-table__row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .theme-table-type--secondary .theme-table__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .theme-table-type--accordion .theme-table__row {
+    position: relative;
+    display: block;
+  }
+  .theme-table-type--accordion .theme-table__row:before {
+    content: "\f0d7";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -8px;
+    font: 16px fontawesome;
+    color: #007CC2;
+    transition: all 0.3s ease;
+  }
+  .theme-table-type--accordion .theme-table__row::after {
+    display: none;
+  }
+  .theme-table-type--accordion .theme-table__row[aria-expanded=true] {
+    background-color: #F6FBFF;
+  }
+  .theme-table-type--accordion .theme-table__row[aria-expanded=true]::before {
+    transform: rotate(-180deg);
+  }
+  .theme-table-type--accordion .theme-table__collapse-content-row {
+    position: relative;
+    visibility: visible;
+  }
+  .theme-table-type--accordion .theme-table__collapse-content-row::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    width: auto;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  .theme-table-type--accordion .theme-table__collapse-content {
+    padding: 0px 20px 20px;
+    background-color: #F6FBFF;
+  }
+}
+@media (min-width: 768px) {
+  .theme-table-type--accordion .theme-table__collapse-content-row {
+    display: none;
+    visibility: hidden;
+  }
+}
+.regulation .theme-table__row {
+  cursor: pointer;
+}
+.regulation .theme-table__collapse-content-row {
+  cursor: pointer;
+}
+.regulation .regulation-table .regulation-title {
+  width: 48%;
+}
+.regulation .regulation-table__collapse-content {
+  font-size: 15px;
+}
+.regulation .regulation-table__collapse-content span {
+  display: block;
+}
+@media (max-width: 767px) {
+  .regulation__filter-text-wrapper {
+    display: none;
+  }
+  .regulation__search-wrapper {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=regulation.css.map*/

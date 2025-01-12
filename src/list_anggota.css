@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Container for Responsive Design */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Table Container with Background Image */
+.table-container {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* Ensures no overflow */
+  background: rgba(255, 255, 255, 0.9);
+  /* Slightly transparent background for content */
+}
+
+.table-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Test with solid color */
+  z-index: -1;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: transparent;
+  /* Ensure table remains transparent */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Subtle background for readability */
+}
+
+table th {
+  background-color: rgba(244, 244, 244, 0.8);
+  /* Light background for headers */
+  font-weight: bold;
+  color: #555;
+}
+
+table td {
+  color: #333;
+}
+
+/* Responsive Table: Scrollable on Smaller Screens */
+.table-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination a,
+.pagination .current-page,
+.pagination button {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solidrgba(241, 225, 0, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.pagination a:hover,
+.pagination button:hover {
+  background-color: rgb(255, 242, 62);
+  color: white;
+}
+
+.pagination .current-page {
+  background-color: background-colorrgb(0, 0, 0);
+
+  color: white;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-container input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Responsive Design */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .subtitle strong {
+    color: #007bff;
+    /* Warna biru untuk menonjolkan nama direktori */
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
+  .table-container {
+    padding: 15px;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  /* Stack pagination */
+  .pagination-container {
+    flex-direction: column;
+  }
+
+  .pagination a,
+  .pagination button {
+    width: 100%;
+    /* Full width buttons for better usability */
+    text-align: center;
+  }
+}
+
+/* Medium devices (601px to 1024px) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .table-container {
+    padding: 18px;
+  }
+}
